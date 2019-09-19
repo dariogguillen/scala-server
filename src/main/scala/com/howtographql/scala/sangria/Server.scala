@@ -2,14 +2,13 @@ package com.howtographql.scala.sangria
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
+import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import akka.stream.ActorMaterializer
-import akka.http.scaladsl.server.Directives._
-import spray.json._
-import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
-
 import scala.concurrent.Await
 import scala.language.postfixOps
+import spray.json._
 
 object Server extends App {
 
